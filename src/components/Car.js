@@ -11,8 +11,8 @@ const Car = (props) => {
             <Paper className="car-paper">
                 <h2>{car.Name}</h2>
                 {
-                    Object.keys(car).map((key, idx) => {
-                        return <Chip label={`${key}: ${car[key]}`}></Chip>
+                    Object.keys(car).map((carinfo, idx) => {
+                        return <p><Chip label={`${carinfo}: ${car[carinfo]}`}></Chip></p>
                     })
                 }
             </Paper>
